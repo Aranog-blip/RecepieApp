@@ -1,11 +1,17 @@
-﻿namespace RecepieApp;
+﻿using RecepieApp.Data;
+
+namespace RecepieApp;
 
 public partial class App : Application
 {
-	public App()
+	public static RecepieBookHistory RecepieBookHistory { get; private set; }	
+		
+		public App(RecepieBookHistory recepieBookHistory)
 	{
 		InitializeComponent();
 
 		MainPage = new AppShell();
+		
+		RecepieBookHistory = recepieBookHistory;
 	}
 }

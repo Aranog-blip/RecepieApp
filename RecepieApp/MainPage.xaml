@@ -54,10 +54,16 @@
             HeightRequest="300"
             x:Name="InputDescriptionOf"/>
             </FlexLayout>
-            <Button
-            x:Name="SubmitBtn"
+            <FlexLayout>
+                <Button
+            x:Name="RecepieBookbutton"
+            Text="Recepie Book"
+            Clicked="ToRecepiePagebnt"/>
+                <Button
+            x:Name="SaveButton"
             Text="Save"
             Clicked="OnClickSave"/>
+            </FlexLayout>
 
         </VerticalStackLayout>
     </ScrollView>

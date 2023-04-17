@@ -13,7 +13,8 @@
             JustifyContent="SpaceEvenly">
                 <Label
             HorizontalOptions="Start"
-            Text="Name of the recepie:"/>
+            Text="Name of the recepie:"
+            x:Name="NameOf"/>
              <Entry
             HorizontalOptions="Start"
             Text=""
@@ -53,6 +54,10 @@
             HeightRequest="300"
             x:Name="InputDescriptionOf"/>
             </FlexLayout>
+            <Button
+            x:Name="SubmitBtn"
+            Text="Save"
+            Clicked="OnClickSave"/>
 
         </VerticalStackLayout>
     </ScrollView>

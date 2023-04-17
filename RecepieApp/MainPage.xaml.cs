@@ -24,10 +24,9 @@ public partial class MainPage : ContentPage
     }
 
 	private void ToRecepiePagebnt (object sender, EventArgs e)
-	{
-		Button PageButton = (Button)sender;
+	{ 
 
-		Navigation.PushAsync(new RecepieBookPage(PageButton.Text));
+		Navigation.PushAsync(new RecepieBookPage());
 	}
 
 

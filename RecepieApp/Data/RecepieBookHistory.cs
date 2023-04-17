@@ -15,7 +15,7 @@ namespace RecepieApp.Data
 
         public void Init ()
         {
-            conn = new SQLiteConnection( _dbPath );
+            conn = new SQLiteConnection(_dbPath);
             conn.CreateTable<Recepie>();
         }
 
@@ -24,16 +24,16 @@ namespace RecepieApp.Data
             Init();
             return conn.Table<Recepie>().ToList();
         }
-        public void Add( Recepie recepie )
+        public void Add(Recepie recepie)
         {
             conn = new SQLiteConnection ( _dbPath );
-            conn.Insert( recepie );
+            conn.Insert(recepie);
         }
 
-        public void Delete( Recepie recepie )
+        public void Delete(Recepie recepie)
         {
-            conn = new SQLiteConnection ( _dbPath );
-            conn.Delete( recepie );
+            conn = new SQLiteConnection (_dbPath);
+            conn.Delete(recepie);
         }
     }
 }
